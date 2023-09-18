@@ -1,0 +1,42 @@
+import numpy as np
+
+# 1. Create a numpy array from a python list
+python_list = [1, 2, 3, 4, 5]
+numpy_array_from_list = np.array(python_list)
+
+# 2. Create a numpy array of length 1 from a python number
+python_number = 42
+numpy_array_from_number = np.array([python_number])
+
+# 3. Sum two arrays elementwise
+array1 = np.array([1, 2, 3])
+array2 = np.array([4, 5, 6])
+sum_elementwise = array1 + array2
+
+# 4. Sum an array and a number
+array = np.array([1, 2, 3])
+number = 10
+sum_array_number = array + number
+
+# 5. Multiply two arrays elementwise
+array3 = np.array([2, 3, 4])
+array4 = np.array([5, 6, 7])
+product_elementwise = array3 * array4
+
+# 6. Dot product of two arrays
+array5 = np.array([1, 2, 3])
+array6 = np.array([4, 5, 6])
+dot_product = np.dot(array5, array6)
+
+# 7. Dot product of an array (1D) and a matrix (2D array)
+array7 = np.array([1, 2, 3])
+matrix = np.array([[4, 5, 6], [7, 8, 9], [10, 11, 12]])
+dot_product_array_matrix = np.dot(array7, matrix)
+
+print("1. Numpy array from list:", numpy_array_from_list)
+print("2. Numpy array from number:", numpy_array_from_number)
+print("3. Sum elementwise:", sum_elementwise)
+print("4. Sum array and number:", sum_array_number)
+print("5. Product elementwise:", product_elementwise)
+print("6. Dot product of two arrays:", dot_product)
+print("7. Dot product of array and matrix:", dot_product_array_matrix)
